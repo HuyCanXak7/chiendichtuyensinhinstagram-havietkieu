@@ -1,0 +1,230 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+line-height:1.6;
+color:#333;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+padding:0 20px;
+}
+
+#navbar{
+position:fixed;
+top:0;
+width:100%;
+background:white;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+z-index:1000;
+GAP:20PX;
+}
+
+#navbar .container{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 0;
+}
+
+.logo{
+font-size:24px;
+font-weight:700;
+color:#6a0dad;
+}
+
+.nav-links{
+display:flex;
+list-style:none;
+}
+
+.nav-links li{
+margin-left:20px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:#333;
+font-weight:500;
+}
+
+.hero{
+height:100vh;
+background:linear-gradient(135deg,#6a0dad,#00bcd4);
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+}
+
+.hero-content h1{
+font-size:40px;
+margin-bottom:20px;
+}
+
+.hero-video{
+max-width:600px;
+margin:auto;
+}
+
+.cta-buttons{
+margin-top:20px;
+display:flex;
+gap:15px;
+justify-content:center;
+}
+
+.btn{
+padding:12px 25px;
+border:none;
+border-radius:30px;
+font-size:16px;
+cursor:pointer;
+}
+
+.primary{
+background:#ff6b6b;
+color:white;
+}
+
+.secondary{
+background:white;
+color:#6a0dad;
+}
+
+.intro{
+padding:80px 0;
+background:#f5f5f5;
+}
+
+.intro h2{
+text-align:center;
+margin-bottom:40px;
+}
+
+.benefits-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+}
+
+.benefit-card{
+background:white;
+padding:30px;
+border-radius:10px;
+text-align:center;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.gallery{
+padding:80px 0;
+}
+
+.gallery h2{
+text-align:center;
+margin-bottom:40px;
+}
+
+.video-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:40px;
+max-width:900px;
+margin:auto;
+}
+
+.instagram-media{
+margin:auto !important;
+}
+
+.info{
+padding:80px 0;
+background:#f5f5f5;
+}
+
+.info h2{
+text-align:center;
+margin-bottom:40px;
+}
+
+.info-content{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+}
+
+.info-item{
+background:white;
+padding:30px;
+border-radius:10px;
+text-align:center;
+}
+
+.highlight{
+background:linear-gradient(135deg,#6a0dad,#00bcd4);
+color:white;
+}
+
+.form-section{
+padding:80px 0;
+}
+
+.form-section h2{
+text-align:center;
+margin-bottom:30px;
+}
+
+#lead-form{
+max-width:500px;
+margin:auto;
+}
+
+.form-group{
+margin-bottom:20px;
+}
+
+.form-group input,
+.form-group select{
+width:100%;
+padding:12px;
+border:1px solid #ccc;
+border-radius:8px;
+}
+
+.footer{
+background:#333;
+color:white;
+padding:40px 0;
+text-align:center;
+}
+
+@media(max-width:768px){
+
+.video-grid{
+grid-template-columns:1fr;
+}
+
+.benefits-grid{
+grid-template-columns:1fr;
+}
+
+.info-content{
+grid-template-columns:1fr;
+}
+
+.nav-links{
+display:none;
+}
+
+.hero-content h1{
+font-size:28px;
+}
+
+}
